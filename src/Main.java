@@ -1,70 +1,35 @@
-
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Podaj wiek: ");
+        int wiek = scan.nextInt();
+        if (wiek % 3 == 0)
+        {
+            System.out.println("Podzielny przez 3");
+        }
+        else
+            System.out.println("Niepodzielny przez 3 ");
 
+        System.out.println("Podaj numer indeksu: ");
+        int nr_indeksu = scan.nextInt();
+        int wynik = (nr_indeksu % 2 == 0) ? 0 : 1;
+        if (wynik == 0)
+            System.out.println("Numer indeksu jest parzysty");
+        else
+            System.out.println("Numer indeksu jest nieparzysty");
 
-        boolean a = true;
-        boolean b = false;
-        boolean c = true;
-        boolean d = false;
-        System.out.println("Operatory arytmetyczne:" + "\na = true\tb = false\tc = true\td= false");
+        System.out.print("Podaj dowolną liczbę: ");
+        double lp = scan.nextDouble();
+        if (lp > 0)
+            System.out.println("Liczba jest większa od zera");
+        else if (lp == 0)
+            System.out.println("Liczba jest równa zero");
+        else if (lp < 0)
+            System.out.println("Liczba jest mniejsza od zera");
 
-        System.out.println("(a && b) : " + (a && b));
-        System.out.println("(a && c) : " + (a && c));
-        System.out.println("(a && d) : " + (a && d));
-        System.out.println("(b && a) : " + (b && a));
-        System.out.println("(b && c) : " + (b && c));
-        System.out.println("(b && d) : " + (b && d));
-        System.out.println("(c && a) : " + (c && a));
-        System.out.println("(c && b) : " + (c && b));
-        System.out.println("(c && d) : " + (c && d));
-        System.out.println("(d && a) : " + (d && a));
-        System.out.println("(d && b) : " + (d && b));
-        System.out.println("(d && c) : " + (d && c));
-
-        System.out.println("");
-
-        System.out.println("(a || b) : " + (a || b));
-        System.out.println("(a || c) : " + (a || c));
-        System.out.println("(a || d) : " + (a || d));
-        System.out.println("(b || a) : " + (b || a));
-        System.out.println("(b || c) : " + (b || c));
-        System.out.println("(b || d) : " + (b || d));
-        System.out.println("(c || a) : " + (c || a));
-        System.out.println("(c || b) : " + (c || b));
-        System.out.println("(c || d) : " + (c || d));
-        System.out.println("(d || a) : " + (d || a));
-        System.out.println("(d || b) : " + (d || b));
-        System.out.println("(d || c) : " + (d || c));
-
-        System.out.println("");
-
-        System.out.println("!a : " + !a);
-        System.out.println("!b : " + !b);
-        System.out.println("!c : " + !c);
-        System.out.println("!d : " + !d);
-
-        System.out.println("");
-
-        System.out.println("!(a && b) : " + !(a && b));
-        System.out.println("!(b && c) : " + !(b && c));
-        System.out.println("!(c && d) : " + !(c && d));
-
-        System.out.println("");
-
-        System.out.println("!((a && c) || (!a || b) && (!a || d) : " + !((a && c) || (!a || b) && (!a || d)));
-        System.out.println("!((a && c) && (!a || b) && (!a || d) || (!d || b) : " + !((a && c) && (!a || b) && (!a || d) || (!d || b)));
-
-        System.out.println();
-
-        int x = 2;
-        int y = 5;
-        int z = 2;
-
-        System.out.printf("Operatory porównania:" + "\nx = %d\ty = %d\tz = %d\n", x, y, z);
-
-        System.out.println("((x > y) || (a && b) || (b && d) && (x <= z)) : " + ((x > y) || (a && b) || (b && d) && (x <= z)));
     }
 }
+
