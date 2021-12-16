@@ -5,8 +5,9 @@ public class Main {
         /* ĆW#1 */
         System.out.println("Przykładowy Tekst");
 
-        System.out.printf("To %s tekst  %s .", "jest", "sformatowany");
+        System.out.printf("To %s tekst  %s .%d", "jest", "sformatowany", 100);
 
+        System.out.print(" ");
         System.out.print("Ala ma");
         System.out.print(" Kota");
     }
