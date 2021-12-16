@@ -1,60 +1,32 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Podaj imię:");
+        String imie = scan.next();
+        System.out.print("Podaj nazwisko:");
+        String nazwisko = scan.next();
+        System.out.print("Podaj wiek:");
+        int wiek = scan.nextInt();
+        System.out.print("Podaj numer Indeksu:");
+        int nr_indeksu = scan.nextInt();
 
-        /* ĆW#2 */
-        byte zmiennaByte = 22;
-        short zmiennaShort = 1231;
-        int zmiennaInt = 10213;
-        long zmiennaLong = 123000123000L;
-        float zmiennaFloat = 22.12f;
-        double zmiennaDouble = 129000.1299;
-        boolean zmiennaBoolean = true;
-        char zmiennaChar = 't';
-        String zmiennaString = "Witaj świecie!";
-        int liczbaA = 25;
-        int liczbaB = 5;
-        double liczbaX = 20.5;
-        double liczbaY = 5.5;
-        System.out.println("Wyświetlanie zmiennych: ");
+        System.out.printf("Imie:  %s Naziwsko: %s ", imie, nazwisko );
+        System.out.println("Wiek: "+wiek + " "+ "Numer Indeksu: "+nr_indeksu);
 
-        System.out.println(zmiennaByte);
-        System.out.println(zmiennaShort);
-        System.out.println(zmiennaInt);
-        System.out.println(zmiennaLong);
-        System.out.println(zmiennaFloat);
-        System.out.println(zmiennaDouble);
-        System.out.println(zmiennaBoolean);
-        System.out.println(zmiennaChar);
-        System.out.println(zmiennaString);
-        System.out.println(liczbaA);
-        System.out.println(liczbaB);
-        System.out.println(liczbaX);
-        System.out.println(liczbaY);
 
         System.out.println(" ");
+        System.out.println("Podaj 1 liczbę: ");
+        int liczbaA = scan.nextInt();
+        System.out.println("Podaj 2 liczbę: ");
+        int liczbaB = scan.nextInt();
 
-        System.out.println("Dodawanie zmiennych typu INT"+" "+ (liczbaA + liczbaB));
-        System.out.println("Odejmowanie zmiennych typu INT"+" "+ (liczbaA - liczbaB));
-        System.out.println("Mnożenie zmiennych typu INT"+" "+ (liczbaA * liczbaB));
-        System.out.println("Dzielenie zmiennych typu INT"+" "+ (liczbaA / liczbaB));
-        System.out.println("Modulo zmiennych typu INT"+" "+ (liczbaB % liczbaA));
-        System.out.println("Inkrementacja zmiennej LiczbaA"+" "+ (++liczbaA));
-        System.out.println("Inkrementacja zmiennej LiczbaB"+" "+ (++liczbaB));
-        System.out.println("Dekrementacja zmiennej LiczbaA"+" "+ (--liczbaA));
-        System.out.println("Dekrementacja zmiennej LiczbaB"+" "+ (--liczbaB));
-
-        System.out.println(" ");
-
-        System.out.println("Dodawanie zmiennych typu Double"+" "+ (liczbaX + liczbaY));
-        System.out.println("Odejmowanie zmiennych typu Double"+" "+ (liczbaX - liczbaY));
-        System.out.println("Mnożenie zmiennych typu Double"+" "+ (liczbaX + liczbaY));
-        System.out.println("Dzielenie zmiennych typu Double"+" "+ (liczbaX - liczbaY));
-        System.out.println("Modulo zmiennych typu Double"+" "+ (liczbaY % liczbaX));
-        System.out.println("Inkrementacja zmiennej LiczbaX"+" "+ (++liczbaX));
-        System.out.println("Inkrementacja zmiennej LiczbaY"+" "+ (++liczbaY));
-        System.out.println("Dekrementacja zmiennej LiczbaX"+" "+ (--liczbaX));
-        System.out.println("Dekrementacja zmiennej LiczbaY"+" "+ (--liczbaY));
-
+        System.out.println("Dodawanie = "+ (liczbaA + liczbaB));
+        System.out.println("Odejmowanie = "+ (liczbaA - liczbaB));
+        System.out.println("Mnożenie = "+ (liczbaA * liczbaB));
+        System.out.println("Dzielenie = "+ (liczbaA / liczbaB));
+        System.out.println("Modulo = "+ (liczbaA % liczbaB));
     }
 }
