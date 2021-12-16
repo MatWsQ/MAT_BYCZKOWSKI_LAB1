@@ -29,7 +29,6 @@ public class Main {
             System.out.println("Liczba jest równa zero");
         else if (lp < 0)
             System.out.println("Liczba jest mniejsza od zera");
-
     }
 }
 
