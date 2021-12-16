@@ -1,35 +1,19 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Podaj wiek: ");
-        int wiek = scan.nextInt();
-        if (wiek % 3 == 0)
-        {
-            System.out.println("Podzielny przez 3");
-        }
-        else
-            System.out.println("Niepodzielny przez 3 ");
+        double[] tab5 = new double[5];
+        tab5[0]= 11;
+        tab5[1]= 4;
+        tab5[2]= 32;
+        tab5[3]= 6;
+        tab5[4]= 53;
 
-        System.out.println("Podaj numer indeksu: ");
-        int nr_indeksu = scan.nextInt();
-        int wynik = (nr_indeksu % 2 == 0) ? 0 : 1;
-        if (wynik == 0)
-            System.out.println("Numer indeksu jest parzysty");
-        else
-            System.out.println("Numer indeksu jest nieparzysty");
+        System.out.println("tab5[0]: " + tab5[0]);
+        System.out.println("tab5[1]: " + tab5[1]);
+        System.out.println("tab5[2]: " + tab5[2]);
+        System.out.println("tab5[3]: " + tab5[3]);
+        System.out.println("tab5[4]: " + tab5[4]);
 
-        System.out.print("Podaj dowolną liczbę: ");
-        double lp = scan.nextDouble();
-        if (lp > 0)
-            System.out.println("Liczba jest większa od zera");
-        else if (lp == 0)
-            System.out.println("Liczba jest równa zero");
-        else if (lp < 0)
-            System.out.println("Liczba jest mniejsza od zera");
 
     }
 }
-
