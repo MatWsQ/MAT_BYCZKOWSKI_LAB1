@@ -16,7 +16,6 @@ public class Main {
         System.out.printf("Imie:  %s Naziwsko: %s ", imie, nazwisko );
         System.out.println("Wiek: "+wiek + " "+ "Numer Indeksu: "+nr_indeksu);
 
-
         System.out.println(" ");
         System.out.println("Podaj 1 liczbę: ");
         int liczbaA = scan.nextInt();
