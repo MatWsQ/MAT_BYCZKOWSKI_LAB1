@@ -14,6 +14,5 @@ public class Main {
         System.out.println("tab5[3]: " + tab5[3]);
         System.out.println("tab5[4]: " + tab5[4]);
 
-
     }
 }
